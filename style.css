@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.card-front{
+    min-width: 400px;
+    height: 800px;
+    background-color: rgba(0, 0, 255, 0.7);
+    margin: 0px;
+    padding: 0px;
+    backface-visibility: hidden;
+    position: relative;
+}
+
+.card-back{
+    min-width: 400px;
+    height: 800px;
+    background-color: rgba(0, 128, 0, 0.7);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    position: relative;
+}
+
+h1{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 350px;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
