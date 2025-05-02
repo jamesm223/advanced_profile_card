@@ -1,7 +1,13 @@
-const toggleBtn = document.getElementById('card-container');
 
-const body = document.body;
+function myFunction() {
+    var element = document.getElementById('card-container');
+    element.classList.toggle("flipped");
+    
+}
 
-toggleBtn.addEventListener('click', () => {
-    toggleBtn.classList.toggle('flipped');
-});
+function aboutFunction() {
+    var element = document.getElementById('bottom-text');
+    element.classList.toggle("flipped");
+}
+
+
