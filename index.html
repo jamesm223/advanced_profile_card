@@ -8,12 +8,50 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="card" id="card-container">
-        <div class="card-front">
-            <h1>FRONT</h1>
-        </div>
-        <div class="card-back">
-            <h1>BACK</h1>
+    <div class="container">
+        <div class="card" id="card-container">
+            <div class="card-front">
+                <div class="toptext">
+                    <div class="top-button">
+                        <h1>GET IN TOUCH!</h1>
+                        <button id="flip" onclick="myFunction()">FLIP</button>
+                    </div>
+                <h2>Complete the form below and i will get back as soon as i can.</h2>
+                </div>
+                <div class="all-inputs">
+                    <div class="name-inputs">
+                        <div class="input-field">
+                            <h3>First Name</h3>
+                            <input type="text">
+                        </div>
+                        <div class="input-field">
+                            <h3>Last Name</h3>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="email">
+                        <h3>Email *</h3>
+                        <input type="text" required>
+                        <p>Maximum of 255 characters.</p>
+                    </div>
+                    <div class="message">
+                        <h3>Message *</h3>
+                        <textarea id="message-input" required></textarea>
+                        <p>Minimum 50 characters, Maximum 500 characters.</p>
+                    </div>
+                    <p>Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text</p>
+                    <div class="privacy-policy">
+                        <input type="checkbox">
+                        <h4>Please accept the Privacy Policy*</h4>
+                        <button>SUBMIT</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="card-back">
+                <h1>BACK</h1>
+            </div>
         </div>
     </div>
 </body>
