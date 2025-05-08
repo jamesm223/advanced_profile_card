@@ -177,7 +177,7 @@ h4 {
     clip-path: circle(5%);
     background-color: black;
     z-index: 98;
-    transition: clip-path 2s;
+    transition: clip-path 1.5s;
 }
 
 .logo {
@@ -195,7 +195,7 @@ h4 {
 
 .clip-logo:hover {
     clip-path: circle(100%);
-    transition: clip-path 2s;
+    transition: clip-path 1.5s;
 }
 
 
@@ -317,22 +317,30 @@ h6 {
     }
   }
 
-  .active img {
+  img {
     width: 100px;
     height: 100px;
     position: relative;
     left: 150px;
     top: 50px;
     filter: drop-shadow(5px 5px 5px black);
+    transition: transform .5s;
   }
 
-  .active a {
+  .top-content {
+    padding-top: 30px;
+  }
+
+ .topnav button {
     background-color: #40507F;
     font-size: 20px;
     color: #E8E1EF;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
+    position: relative;
+    left: 85px;
+    top: -20px;
   }
 
   .clip-container {
@@ -346,10 +354,11 @@ h6 {
   }
 
   .topnav {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     top: 10px;
     gap: 5px;
   }
@@ -359,9 +368,10 @@ h6 {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 40px;
     font-weight: 400;
     font-size: 24px;
+    top: 40px;
+    transition: transform .5s;
   }
 
   .clip-container h2 {
@@ -399,5 +409,21 @@ h6 {
     margin-top: 10px;
   }
 
+.hidden {
+    display: none;
 
+}
+
+.shrunk {
+    position: absolute;
+    transform: translate(-120px, 10px);
+    transition: transform .5s;
+}
+
+.moved {
+    margin-top: 118px;
+    scale: 1.2;
+    transform: translate(30px, -80px);
+    transition: transform .8s;
+}
 
